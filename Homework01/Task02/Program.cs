@@ -11,25 +11,6 @@ int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-// int firstNumber = 5;
-// int secondNumber = 5;
-
-// if (firstNumber > secondNumber)
-// {
-//     Console.WriteLine($"Первое число больше ({firstNumber} > {secondNumber}).");
-// }
-// else
-// {
-//     if (secondNumber > firstNumber)
-//     {
-//         Console.WriteLine($"Второе число больше ({secondNumber} > {firstNumber}).");
-//     }
-//     else
-//     {
-//         Console.WriteLine("Числа равны.");
-//     }
-// }
-
 switch (firstNumber > secondNumber)
 {
     case true:

@@ -41,7 +41,14 @@ else
         }
         else
         {
-            Console.WriteLine("Все числа равны.");
+            if (secondNumber == thirdNumber)
+            {
+                Console.WriteLine($"{secondNumber} — самое большое число.");
+            }
+            else
+            {
+                Console.WriteLine("Все числа равны.");
+            }
         }
     }
 }
