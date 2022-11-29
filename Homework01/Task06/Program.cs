@@ -6,7 +6,7 @@
 */
 
 Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = int.Parse(Console.ReadLine());
 
 if (number % 2 == 0)
 {

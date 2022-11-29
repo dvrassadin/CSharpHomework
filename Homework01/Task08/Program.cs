@@ -8,22 +8,20 @@ Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int index = 1;
 
-switch (index > number)
+if (index > number)
 {
-    case true:
-        while (index > number)
+    while (index > number)
         {
             if (index % 2 == 0) { Console.Write($"{index}, "); }
             index--;
         }
-        break;
-    case false:
-        while (index < number)
+}
+else
+{
+    while (index < number)
         {
             if (index % 2 == 0) { Console.Write($"{index}, "); }
             index++;
         }
-        break;
 }
-
 
