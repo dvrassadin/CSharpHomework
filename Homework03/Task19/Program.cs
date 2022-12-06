@@ -19,10 +19,10 @@ int CountOfNumber(int number)
     return countOfNumbers;
 }
 
-bool IsPalindrome(int number) // Принимает любое число
+bool IsPalindrome(int number) // Принимает любое число.
 {
     var isPalindrome = true;
-    for (var i = Convert.ToInt32(Math.Pow(10, CountOfNumber(number) - 1)); i >= 10; i /= 100)
+    for (var i = Convert.ToInt32(Math.Pow(10, CountOfNumber(number) - 1)); i > 9; i /= 100)
     {
         if (number / i == number % 10)
         {
@@ -44,4 +44,4 @@ var number = Convert.ToInt32(Console.ReadLine());
 if (IsPalindrome(number))
     Console.WriteLine("Палиндром.");
 else
-    Console.WriteLine("Не палиндром");
+    Console.WriteLine("Не палиндром.");
