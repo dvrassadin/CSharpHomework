@@ -27,5 +27,5 @@ int pow = Convert.ToInt32(Console.ReadLine());
 if (Exponentiation(number, pow) is int result)
     Console.WriteLine($"{number} в степени {pow} равно {result}.");
 else
-    Console.WriteLine("Введена некорректная степень.");
+    Console.WriteLine("Введена ненатуральная степень.");
 

@@ -5,13 +5,11 @@
 
 int CountOfNumbers(int number)
 {
-    var count = 0;
+    var count = 1;
     if (number == 0)
-    {
-        count = 1;
         return count;
-    }
 
+    count = 0;
     if (number < 0)
         number = -number;
     while (number > 0)

@@ -9,6 +9,7 @@ import Foundation
 
 var number: Int?
 var pow: Int?
+let convertError = "Введено некорректное число."
 
 print("Введите целое число: ", terminator: "")
 if let inpout = readLine() {
@@ -18,10 +19,10 @@ if let inpout = readLine() {
         if let inpout = readLine() {
             if let int = Int(inpout) {
                 pow = int
-            } else { print("Введено некорректное число.") }
-        } else { print("Введено некорректное число.") }
-    } else { print("Введено некорректное число.") }
-} else { print("Введено некорректное число.") }
+            } else { print(convertError) }
+        } else { print(convertError) }
+    } else { print(convertError) }
+} else { print(convertError) }
 
 if let number, let pow {
     if let result = Exponentiation(number: number, in: pow) {
