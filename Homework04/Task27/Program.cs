@@ -3,24 +3,19 @@
 // 82 -> 10
 // 9012 -> 12
 
-int CountOfNumbers(int number)
+int SumOfNumbers(int number)
 {
-    var count = 1;
-    if (number == 0)
-        return count;
-
-    count = 0;
-    if (number < 0)
-        number = -number;
+    var sum = 0;
     while (number > 0)
     {
+        sum += number % 10;
         number /= 10;
-        count++;
     }
-    return count;
+
+    return sum;
 }
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"В числе {CountOfNumbers(number)} цифр.");
+Console.WriteLine($"Сумма чисел: {SumOfNumbers(number)}");
