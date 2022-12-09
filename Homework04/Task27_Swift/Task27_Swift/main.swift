@@ -13,7 +13,7 @@ let convertError = "Введено некорректное число."
 print("Введите число: ", terminator: "")
 if let inpout = readLine() {
     if let int = Int(inpout) {
-        print("В числе \(countOfNumbers(in: int)) цифр.")
+        print("Сумма цифр: \(sumOfNumbers(in: int)).")
     } else { print(convertError) }
 } else { print(convertError) }
 

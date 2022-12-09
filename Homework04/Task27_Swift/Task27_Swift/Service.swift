@@ -7,18 +7,15 @@
 
 import Foundation
 
-func countOfNumbers(in number: Int) -> Int {
-    var count = 1
-    if number == 0 { return count }
-    
+func sumOfNumbers(in number: Int) -> Int {
+    var sum = 0
     var mutableNumber = number
-    count = 0
     if mutableNumber < 0 {
         mutableNumber = -mutableNumber
     }
     while mutableNumber > 0 {
+        sum += mutableNumber % 10
         mutableNumber /= 10
-        count += 1
     }
-    return count
+    return sum
 }
