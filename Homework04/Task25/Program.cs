@@ -2,21 +2,22 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
+/// <summary>
+///  Возвращает результат возведения number в натуральную степень pow или null если степень ненатуральная.
+/// </summary>
 int? Exponentiation(int number, int pow)
 {
-    int? result = null;
     if (pow <= 0)
-        return result;
-
+        return null;
     if (number == 0)
-        result = 0;
+        return 0;
     else
     {
-        result = number;
+        int result = number;
         for (int i = pow; i > 1; i--)
             result *= number;
+        return result;
     }
-    return result;
 }
 
 Console.Write("Введите число: ");
@@ -28,4 +29,3 @@ if (Exponentiation(number, pow) is int result)
     Console.WriteLine($"{number} в степени {pow} равно {result}.");
 else
     Console.WriteLine("Введена ненатуральная степень.");
-
