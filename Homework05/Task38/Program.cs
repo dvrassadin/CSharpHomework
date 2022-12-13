@@ -29,7 +29,6 @@ double DiffBetweenMaxAndMin(double[] array)
     return max - min;
 }
 
-// double[] array = { 1.43, 4.12, 5, 2.5 };
 double[]? array = CreateArrayWithDoubles(5, 1, 5, 2);
 
 if (array is double[])

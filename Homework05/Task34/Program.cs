@@ -24,6 +24,6 @@ uint CountOfEvenNumbers(int[] array)
 }
 
 int[] array = CreateArray(15, 100, 999);
-Console.WriteLine(string.Join(", ", array));
+Console.WriteLine(string.Join(" | ", array));
 
 Console.WriteLine($"В массиве {CountOfEvenNumbers(array)} чётных элементов");

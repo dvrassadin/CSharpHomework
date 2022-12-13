@@ -25,8 +25,8 @@ int? SumOfOddIndexElement(int[] array)
     }
 }
 
-int[] array = CreateArray(10, -15, 15);
-Console.WriteLine(String.Join(", ", array));
+int[] array = CreateArray(1, -15, 15);
+Console.WriteLine(String.Join(" | ", array));
 
 if (SumOfOddIndexElement(array) is int sum)
     Console.WriteLine($"Сумма элементов с нечётными индексами: {sum}.");
