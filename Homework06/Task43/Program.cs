@@ -4,7 +4,7 @@
 
 double[] IntersectionPoint(double b1, double k1, double b2, double k2)
 {
-    double[] point = new double[2] { (b2 - b1) / (k1 - k2), 0 };
+    double[] point = { (b2 - b1) / (k1 - k2), 0 };
     point[1] = k1 * point[0] + b1;
 
     return point;
