@@ -22,7 +22,7 @@ double? RandomRealNumber(int minValue, int maxValue, int digits)
 // Возвращает массив вещественных чисел или null если нельзя создать массив с введёнными параметрами.
 double[,]? CreateRealNumbersArray(int rows, int columns, int minValue, int maxValue, int digits)
 {
-    if (rows <= 0 || columns <= 0)
+    if (rows < 1 || columns < 1)
         return null;
     double[,] array = new double[rows, columns];
     for (int i = 0; i < rows; i++)

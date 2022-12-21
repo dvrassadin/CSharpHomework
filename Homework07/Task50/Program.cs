@@ -30,7 +30,7 @@ int[,]? CreateIntArray(int rows, int columns, int minValue, int maxValue)
 
 int? FindElementIn(int[,] array, int rowIndex, int columnIndex)
 {
-    if (rowIndex > array.GetLength(0) || columnIndex > array.GetLength(1))
+    if (rowIndex > array.GetLength(0) - 1 || columnIndex > array.GetLength(1) - 1)
         return null;
     else
         return array[rowIndex, columnIndex];
