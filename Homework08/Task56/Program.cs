@@ -58,7 +58,7 @@ int[] SumsOfRows(int[,] array)
 }
 
 
-if (CreateIntArray(4, 2, 0, 9) is int[,] array)
+if (CreateIntArray(4, 3, 0, 9) is int[,] array)
 {
     PrintArray(array);
     Console.WriteLine();
